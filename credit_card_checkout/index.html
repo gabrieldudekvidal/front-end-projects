@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <style>
+
+        body {
+            background-color: black;
+        }
+
+        .payment-container {
+            background-color: #ffffff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            padding: 100px;
+        }
+        .card {
+            background: rgb(255,190,0);
+            background: linear-gradient(90deg, rgba(255,190,0,1) 0%, rgba(255,86,4,1) 74%);
+            width: 25vh;
+            height: 15vh;
+            border-radius: 10px;
+        }
+
+        .card-box {
+            position: relative;
+            top: 60%;
+            left: 15%;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="payment-container">
+        <div class="card">
+            <div class="card-box">
+                <p id="output-card-number"> </p>
+                <p id="output-card-holder"> </p>
+            </div>
+        </div>
+        
+        <input type="text" id="card-number">
+        <input type="text" id="card-holder">
+
+
+    </div>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
